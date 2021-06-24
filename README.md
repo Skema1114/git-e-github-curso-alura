@@ -32,6 +32,11 @@
 - `git pull server-repo master` [dentro de clone-server-repo]
 - `git remote rename nomeAntigo novoNome` (para renomear um determinado remote)
 - `git push -u origin master` (o -u do comando faz com que, você está 'dizendo' que sempre que estiver na master do origin, pode fazer apenas o 'git pull' e não o comando inteiro, ele cria tipo um atalho)
+- `git branch titulo`
+- `git checkout titulo`
+- `git merge titulo` [dentro da branch master] (cria um novo commit na branch atual e atualiza/junta com os dados da branch titulo (nese exemplo))
+- `git rebase titulo` [dentro da branch master] (o git vai pegar os commits da branch titulo e atuaizar junto do commit novo na branch master, ele vai pegar esse commit novo da branch master e trazer para frente de todos, ou seja, gerará um novo commit. Com isso, a branch master fica com todos os commits que estavam na branch titulo e junto com o novo que tinha na master)
+- `git log --graph` (mostra as linhas de desenvolvimento dos commits)
 
 ## Anotações
 
@@ -49,7 +54,6 @@
 
 ## Links
 
-- Comandos e parâmetros disponíveis do git log
-  - https://devhints.io/git-log
-- Formatando os logs com o prettie
-  - https://devhints.io/git-log-format
+- Comandos e parâmetros disponíveis do git log (`https://devhints.io/git-log`)
+- Formatando os logs com o prettie (`https://devhints.io/git-log-format`)
+- Visualizando graficamente como os comandos do git funcionam (`https://git-school.github.io/visualizing-git/#free`)
