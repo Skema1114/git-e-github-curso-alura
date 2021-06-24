@@ -9,17 +9,29 @@
 
 ## Comandos utilizados
 
-- git status (verificar o status do repositório)
-- git add imdex.html / index add . (adicionar um ou vários arquivos para que o git começe a "escutá-lo" e que o mesmo fique pronto para receber uma mensagem de commit)
-- git commit -m "Mensagem pequena e descritiva" ("encapsula" os arquivos que estão sendo "escutados"/estageados e rotula os mesmos com essa mensagem passada)
-- git log (mostra diversas informações do histórico de commits efetuados no repositório)
-- git config --local user.name "Nome" (altera o nome do usuário no repositório)
-- git config user.name (visualiza o nome do usuario no repositório)
-- git log --oneline (mostra o log só que de forma super resumida)
-- git log -p (mostra o log só que de forma super completa)
-- git log --pretty="format:%H" (indenta para que o log mostre apenas os hashs dos commits)
-- git log --pretty="format:%h %s" (indenta o log de forma que o mesmo mostre apenas o hash resumido o as mensagens de commits)
-- git log --pretty="format:%h %s %ae" (indenta o log de forma que o mesmo motre apenas o hash resumido, as mensagens de commits e o email do autor)
+- `git init` [dentro de clone-server-repo, remote-server-repo] (inicializa o git)
+- `git status` (verificar o status do repositório)
+- `git add imdex.html / index add .` (adicionar um ou vários arquivos para que o git começe a "escutá-lo" e que o mesmo fique pronto para receber uma mensagem de commit)
+- `git commit -m "Mensagem pequena e descritiva"` ("encapsula" os arquivos que estão sendo "escutados"/estageados e rotula os mesmos com essa mensagem passada)
+- `git log` (mostra diversas informações do histórico de commits efetuados no repositório)
+- `git config --local user.name "Nome"` (altera o nome do usuário no repositório)
+- `git config user.name` (visualiza o nome do usuario no repositório)
+- `git log --oneline` (mostra o log só que de forma super resumida)
+- `git log -p` (mostra o log só que de forma super completa)
+- `git log --pretty="format:%H"` (indenta para que o log mostre apenas os hashs dos commits)
+- `git log --pretty="format:%h %s"` (indenta o log de forma que o mesmo mostre apenas o hash resumido o as mensagens de commits)
+- `git log --pretty="format:%h %s %ae"` (indenta o log de forma que o mesmo motre apenas o hash resumido, as mensagens de commits e o email do autor)
+- `git init --bare` [dentro de server-repo] (informa que esse repositorio so vai servir pra armazenar as alterações dos arquivos e não os arquivos própriamente dito, um repositório "puro")
+- `git remote` (lista os repositorios remoto que o repositorio local conhece)
+- `git remote add server-repo C:\projetos\git-e-github-curso-alura\repo\server-repo` [dentro de clone-server-repo, remote-server-repo] (adicionando um repositório remoto na pasta atual, onde o nome do mesmo foi colocado como server-repo e por ultimo foi passado o caminho do servidor)
+- `git remote -v` (mostra o endereço dos repositorios remotos)
+- `git clone C:\projetos\git-e-github-curso-alura\repo\server-repo projeto` (clonando o repositorio remoto servidor dentro da pasta atual e nomeando esta pasta para projeto)
+- `git add .\local-to-remote-server-repo.html` [denro de remote-server-repo]
+- `git commit -m "Enviando para o server-repo"` [denro de remote-server-repo]
+- `git push server-repo master` [dentro de remote-server-repo]
+- `git pull server-repo master` [dentro de clone-server-repo]
+- `git remote rename nomeAntigo novoNome` (para renomear um determinado remote)
+- `git push -u origin master` (o -u do comando faz com que, você está 'dizendo' que sempre que estiver na master do origin, pode fazer apenas o 'git pull' e não o comando inteiro, ele cria tipo um atalho)
 
 ## Anotações
 
