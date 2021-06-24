@@ -37,6 +37,9 @@
 - `git merge titulo` [dentro da branch master] (cria um novo commit na branch atual e atualiza/junta com os dados da branch titulo (nese exemplo))
 - `git rebase titulo` [dentro da branch master] (o git vai pegar os commits da branch titulo e atuaizar junto do commit novo na branch master, ele vai pegar esse commit novo da branch master e trazer para frente de todos, ou seja, gerará um novo commit. Com isso, a branch master fica com todos os commits que estavam na branch titulo e junto com o novo que tinha na master)
 - `git log --graph` (mostra as linhas de desenvolvimento dos commits)
+- `git stash apply 0` (para pegar uma stash da lista, basta adicionar esse comando e passar o numero daquela determinada stash desejada, só que assim a stash ainda continuará na lista de stash, mesmo após a chamada da mesma)
+- `git stash drop 0` (apaga a stash informada baseado no numero da mesma obtido pela lista de stashs)
+- `git stash pop` (pega a ultima stash da lista, faz um merge nas modificações atuais e ao mesmo tempo remove essa stash da lista)
 
 ## Anotações
 
