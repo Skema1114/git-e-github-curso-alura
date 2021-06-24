@@ -39,12 +39,14 @@
 - `git log --graph` (mostra as linhas de desenvolvimento dos commits)
 - `git checkout -- index.html` (para desfazer alguma modificação não estagiada (não marcadas para commmitar), pode-se realizar esse comando, no exemplo esta voltando o mesmo para desfazer as alterações do arquivo index.html, pode-se notar que o checkout serve para andar entre estados, tanto nas branchs como nos estados de edições)
 - `git reset HEAD index.html` (desmarca o arquivo passado para nao entrar no commit, ou seja desestagia aquele determinado arquivo)
-- `git revert 0c109eb38d46a218dc00f935225bee8d596de169` (para reverter/desfazer uma modificação que ja foi commitada, basta adicionar este codigo passando o hash do commit que precisa ser desfeito)
+- `git revert 0c109eb38d46a218dc00f935225bee8d596de169` (para reverter/desfazer uma modificação que ja foi commitada, basta adicionar este codigo passando o hash do commit que precisa ser desfeito, pode ser passado o hash menor)
 - `git stash` (slva as alterações em um lugar temporario sem fazer o commit)
 - `git stash list` (lista os stashs salvos)
 - `git stash apply 0` (para pegar uma stash da lista, basta adicionar esse comando e passar o numero daquela determinada stash desejada, só que assim a stash ainda continuará na lista de stash, mesmo após a chamada da mesma)
 - `git stash drop 0` (apaga a stash informada baseado no numero da mesma obtido pela lista de stashs)
 - `git stash pop` (pega a ultima stash da lista, faz um merge nas modificações atuais e ao mesmo tempo remove essa stash da lista)
+- `git checkout 7723960` (viaja poara um commit em especifico, voce fica desanexado do HEAD e não está em uma branch especifica, pode ser feitas modificações e alterações e quando voltar para master, as alterações serão ignoradas)
+- `git checkout -b novo-branch` [dentro do commit solto 7723960 (baseado no codigo de cima)] (agora será criada uma nova branch levando em consideração como aquele commit estava, ai sim as alterações commitadas serão salvas)
 
 ## Anotações
 
