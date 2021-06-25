@@ -70,6 +70,7 @@
 - **DICA SHOW:** Sempre antes de fazer um commit, é necessário verificar se aquela determinada branch está atualizada ou seja, se possuímos a última versão da mesma;
 - **OBS:** No editor tipo do merge fail, que pode alterar as mensagens de commit no editor do terminal, para sair basta adicionar o comando `:x`;
 - **DO CURSO:** Com o git checkout nós desfazemos uma alteração que ainda não foi adicionada ao index ou stage, ou seja, antes do git add. Depois de adicionar com git add, para desfazer uma alteração, precisamos tirá-la deste estado, com git reset. Agora, se já realizamos o commit, o comando git revert pode nos salvar;
+- teste
 
 ## Entendendo
 
