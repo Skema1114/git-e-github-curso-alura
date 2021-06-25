@@ -2,10 +2,15 @@
 
 ## Neste projeto:
 
-- Curso:
+- Primeiro curso:
 
   - Git e Github: Controle e compartilhe seu código
   - https://cursos.alura.com.br/course/git-github-controle-de-versao
+
+- Segundo curso:
+
+  - Git e Github: Estratégias de ramificação, Conflitos e Pull Requests
+  - https://cursos.alura.com.br/course/git-github-branching-conflitos-pull-requests
 
 ## Comandos utilizados
 
@@ -50,7 +55,7 @@
 - `git diff 7723960..87fef94` (com esse comando é possível verificar as alterações de um determinado commit até (no código, o até é passado como os 2 pontinhos (..)) outro commit)
 - `git diff` (Mostra o que tem para estagiar, ou seja, para adicionar no commit, mas depois que foi adicionado, ele nao mostrar-a nada)
 - `git tag -a v0.1.0` (cria uma tag, uma versão do código que não poderá ser alterada, as alterações feitas entrarão na próxima tag criada)
-- - `git tag -a v0.1.0 -m "Lançando a primeira versão (BETA) da aplicação de cursos"` (cria uma tag/versão e adiciona uma mensagem na mesma)
+- `git tag -a v0.1.0 -m "Lançando a primeira versão (BETA) da aplicação de cursos"` (cria uma tag/versão e adiciona uma mensagem na mesma)
 - `git tag` (mostra todas as tags que o repositório possui)
 - `git push origin v0.1.0` (envia para o repositório remoto a tag/versão criada localmente)
 
@@ -76,3 +81,4 @@
 - Comandos e parâmetros disponíveis do git log (`https://devhints.io/git-log`)
 - Formatando os logs com o prettie (`https://devhints.io/git-log-format`)
 - Visualizando graficamente como os comandos do git funcionam (`https://git-school.github.io/visualizing-git/#free`)
+- Apresentação sobre software livre (`https://slides.com/daianealvesrj/software-livre-para-empreendedores`)
