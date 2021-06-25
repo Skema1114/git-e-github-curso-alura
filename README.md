@@ -53,6 +53,7 @@
 - - `git tag -a v0.1.0 -m "Lançando a primeira versão (BETA) da aplicação de cursos"` (cria uma tag/versão e adiciona uma mensagem na mesma)
 - `git tag` (mostra todas as tags que o repositório possui)
 - `git push origin v0.1.0` (envia para o repositório remoto a tag/versão criada localmente)
+- `git rebase -i HEAD~3` (faz a união de commits, tornando-os em um único, com esses parâmetros significa que a partir do momento atual (agora, para onde o HEAD ta apontando), eu quero unir os outros 3 commits anteriores)
 
 ## Anotações
 
