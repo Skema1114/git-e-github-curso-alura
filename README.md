@@ -59,6 +59,7 @@
 - `git tag` (mostra todas as tags que o repositório possui)
 - `git push origin v0.1.0` (envia para o repositório remoto a tag/versão criada localmente)
 - `git rebase -i HEAD~3` (faz a união de commits, tornando-os em um único, com esses parâmetros significa que a partir do momento atual (agora, para onde o HEAD ta apontando), eu quero unir os outros 3 commits anteriores)
+- `git rebase -i bdae6f0` (faz a união de commits, tornando-os em um único, nesse codigo foi passado o commit anterior aos que eu quero unir, ou seja, é escolhido um antes dos desejados)
 
 ## Anotações
 
@@ -71,7 +72,7 @@
 - **DICA SHOW:** Sempre antes de fazer um commit, é necessário verificar se aquela determinada branch está atualizada ou seja, se possuímos a última versão da mesma;
 - **OBS:** No editor tipo do merge fail, que pode alterar as mensagens de commit no editor do terminal, para sair basta adicionar o comando `:x`;
 - **DO CURSO:** Com o git checkout nós desfazemos uma alteração que ainda não foi adicionada ao index ou stage, ou seja, antes do git add. Depois de adicionar com git add, para desfazer uma alteração, precisamos tirá-la deste estado, com git reset. Agora, se já realizamos o commit, o comando git revert pode nos salvar;
-- teste
+- **OBS:** No git `rebase -i [hash]` após definir os commits que serão unidos, aparecerá uma tela que você tera de escolher quais commits serão unidos em quais, ou seja, deve deixar coemçar com a palavra `pick` aquele commit que receberá os outros commits (geralmente o primeiro da lista pois foi o último commitado) e nos outros é trocado a palavra `pick` pela letra `s`, onde todos que tiverem `s` serão unidos ao `pick` e por fim, após presionar `esc` e escrever `:x` para salvar, será mostrada uma outra tela e nesta será adicionada a mensagem de commit.
 
 ## Entendendo
 
