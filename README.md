@@ -60,6 +60,7 @@
 - `git push origin v0.1.0` (envia para o repositório remoto a tag/versão criada localmente)
 - `git rebase -i HEAD~3` (faz a união de commits, tornando-os em um único, com esses parâmetros significa que a partir do momento atual (agora, para onde o HEAD ta apontando), eu quero unir os outros 3 commits anteriores)
 - `git rebase -i bdae6f0` (faz a união de commits, tornando-os em um único, nesse codigo foi passado o commit anterior aos que eu quero unir, ou seja, é escolhido um antes dos desejados)
+- `git cherry-pick 5c9e3e4` (traz o commit selecionado para o banch atual)
 
 ## Anotações
 
