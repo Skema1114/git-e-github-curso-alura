@@ -1,4 +1,4 @@
-# GitEGithubCursoAlura
+# GitGithubCursoAlura
 
 ## Neste projeto:
 
